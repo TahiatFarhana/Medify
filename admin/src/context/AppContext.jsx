@@ -26,7 +26,7 @@ const AppContextProvider = (props) => {
         return dateArray[0] + " " + months[Number(dateArray[1])] + " " + dateArray[2]
     }
     
-    const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000';
+    const backendUrl = "https://medify-gamma.vercel.app/api"
     
     const [doctors, setDoctors] = useState([]);
     const [loading, setLoading] = useState(true);
